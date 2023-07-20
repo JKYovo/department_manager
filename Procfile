@@ -1,1 +1,1 @@
-web: gunicorn app01.wsgi
+web: uwsgi --http :8000 --module app01.wsgi
